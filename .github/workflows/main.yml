@@ -12,6 +12,11 @@ jobs:
       run: |
         echo "MI_VARIABLE_SECRETA=${{ secrets.prueba }}"
         echo $mivariable
+        if [[ "${{ secrets.prueba }}" == "hola" ]]; then
+          echo "verdadero"
+        else
+          echo "falso"
+        fi
 
 
     env:
