@@ -9,8 +9,9 @@ jobs:
 
     steps:
     - name: Checkout repo
-      uses: actions/checkout@v2
+      run: |
+        echo "MI_VARIABLE_SECRETA=${{ secrets.prueba }}"
+
 
     env:
-      mivariable: ${{secrets.prueba}}
-      
+      mivariable: ${{secrets.prueba}}  
