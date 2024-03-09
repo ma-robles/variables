@@ -12,5 +12,5 @@ jobs:
       uses: actions/checkout@v2
 
     env:
-      mivariable: ${{secret.prueba}}
+      mivariable: ${{secrets.prueba}}
       
