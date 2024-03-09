@@ -11,6 +11,7 @@ jobs:
     - name: Checkout repo
       run: |
         echo "MI_VARIABLE_SECRETA=${{ secrets.prueba }}"
+        echo $mivariable
 
 
     env:
